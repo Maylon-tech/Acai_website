@@ -17,9 +17,11 @@ main {
 }
 
 .container {
-    max-width: 1320px;
+    max-width: 1240px;
     margin: 0 auto;
     height: 90vh;
+    background: rgb(31,133,39);
+    background: linear-gradient(90deg, rgba(31,133,39,1) 8%, rgba(135,213,108,1) 46%, rgba(64,133,40,1) 82%);
 }
 
 .header {
@@ -32,7 +34,8 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, orange, yellow);
+    background: rgb(72,39,105);
+    background: linear-gradient(90deg, rgba(72,39,105,1) 8%, rgba(143,90,212,1) 46%, rgba(67,36,128,1) 82%);
     color: #fff;
     padding: 0 2rem;
     max-width: 1320px;
@@ -44,7 +47,7 @@ main {
     padding: 1rem;
 }
 .header .logo .title {
-    color: #730425;
+    color: #fff;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 800;
@@ -53,7 +56,6 @@ main {
     font-weight: 400;
     font-size: 1.8rem;
     font-style: italic;
-    border-bottom: 1px solid white;
 }
 
 .header .menu {
@@ -64,7 +66,8 @@ main {
 .header .menu a {
     font-size: 1.3rem;
     text-decoration: none;
-    color: #730425;
+    color: #fff;
+    font-weight: bold;
 
 }
 
@@ -74,7 +77,7 @@ main {
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
-    margin-top: 4rem;
+    margin-top: 3.7rem;
 }
 .home-content .content-title {
     width: 25%;
