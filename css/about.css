@@ -1,5 +1,61 @@
+.offer {
+    
+    background-color: #eee;
+}
 
 
+.offer-content {
+    padding: 1rem 2rem;
+}
+.offer-content .sub-title {
+    padding: 1rem;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+}
+.offer-content .offer-title {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 1.8rem 0;
+}
+
+.options-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    grid-gap: 1rem;
+}
+
+.options-cards .cards {
+    padding: 1rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+}
+.options-cards .cards .icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    padding: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+}
+.options-cards .cards h3 {
+    margin: 1.3rem 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+.options-cards .cards p  {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #222;
+    line-height: 1.5;
+}
+
+
+/*  Aout section  */
 .about-container {
     border: 2px solid white;
     height: 65%;

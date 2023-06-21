@@ -1,4 +1,16 @@
 
+:root {
+    --primary-color: #642667;
+    --BG-color: #C8AFD4;
+    --secondary-color: #F6F6F6;
+    --BG-sec-color: #402846;
+    --BG-2-color: #7C6184;
+
+    --secondary-color: #64B240;
+}
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -12,32 +24,35 @@ html, body {
 
 main {
     background-color: #fff;
-    max-width: 1400px;
-    margin: auto;
 }
 
 .container {
     max-width: 1380px;
     margin: 0 auto;
     height: 90vh;
+    
 }
 
 .header {
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    
+    max-width: 1920px;
     width: 100%;
-    height: 10vh;
+    height: 20vh;
+    background-color: var(--primary-color); 
+    padding: 0 2rem;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+.header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #eee;
-    /* background: rgb(72,39,105); */    
-    padding: 0 2rem;
-    max-width: 1320px;
+    max-width: 1160px;
     margin: 0 auto;
-    z-index: 100;
 }
 
 .header .logo {
@@ -46,15 +61,10 @@ main {
 .header .logo .title {
     display: flex;
     align-items: center;
-    color: rgb(72,39,105);
+    color: #eee;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 800;
-}
-.header .logo .title > span {
-    font-weight: 700;
-    font-size: 1.8rem;
-    font-size: 2.7rem;
 }
 
 .header .logo .title img {
@@ -69,10 +79,24 @@ main {
 .header .menu a {
     font-size: 1.3rem;
     text-decoration: none;
-    color: purple;
+    color: #eee;
     font-weight: bold;
 
 }
+
+
+.nav-icons {
+    display: flex;
+    gap: 2.6rem;
+    padding: 1rem;
+}
+.nav-icons i {
+    font-size: 1.4rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
 
 .home-content {
     display: flex;
@@ -82,11 +106,11 @@ main {
     padding: 2rem 1.5rem;
     gap: 1rem;
     background-color: #eeefff;
+    margin-top: 6rem;
 }
 
 .home-content .content-image {
     flex: 1;
-    border: 2px solid orange;
 }
 
 .home-content .content-image img {
@@ -95,15 +119,77 @@ main {
     object-fit: cover;
 }
 
-
-.content-title .brand {
-    border-radius: 50%;
-}
-
-.content {
+.content-info {
     flex: 1;
-    border: 2px solid orange;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  
+    flex-direction: column;
+    padding: 3rem;
 }
+
+.content-info .info {
+    flex: 1;
+    padding: 1rem;
+}
+
+.content-info .info .apps-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-info .info h1 span {
+    color: var(--secondary-color);
+    font-style: italic;
+}
+.content-info .info h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.content-info .info h3 {
+    margin-top: 2rem;
+    text-align: center;
+    color: #444;
+    font-size: 2rem;
+}
+
+.content-info .btn-contents {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-info .btn-contents button {
+    padding: 1.5rem;
+    width: 180px;
+    height: 70px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+
+}
+
+.content-info .btn-contents .btn-action {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+.content-info .btn-contents .btn-menu {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+
+
+
 
 .container-img {
     border: 3px solid blueviolet;
