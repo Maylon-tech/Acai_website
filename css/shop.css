@@ -1,0 +1,67 @@
+@import 'style.css';
+
+.produtos {
+    border: 3px solid red;
+}
+
+.wrapper {
+    border: 2px solid orangered;
+    max-width: 1160px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .buttons-tabs {
+    height: 70%;
+    flex: 1;
+    background-color: var(--BG-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+}
+
+.wrapper .buttons-tabs button {
+    padding: .8rem 1rem;
+    width: 60%;
+    font-size: 1.4rem;
+    color: #222;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.wrapper .buttons-tabs .btn-tab.active {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.wrapper .buttons-tabs button:hover {
+    color: var(--secondary-color);
+}
+
+.wrapper .cards-container {
+    border: 2px solid green;
+    height: 100%;
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    place-items: center;
+}
+
+.wrapper .cards-container .card {
+    border: 2px solid orange;
+    width: 220px;
+    height: 250px;
+    background-color: #777;
+}
