@@ -13,6 +13,9 @@
     display: flex;
     align-items: center;
 }
+.active {
+    background-color: rgb(174, 198, 223);
+}
 
 .wrapper .buttons-tabs {
     height: 70%;
@@ -28,8 +31,8 @@
 
 .wrapper .buttons-tabs button {
     padding: .8rem 1rem;
-    width: 60%;
-    font-size: 1.4rem;
+    width: 70%;
+    font-size: 1.2rem;
     color: #222;
     font-weight: bold;
     text-transform: uppercase;
@@ -52,16 +55,31 @@
 .wrapper .cards-container {
     border: 2px solid green;
     height: 100%;
-    flex: 3;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    flex: 4;
+    display: flex;
     align-items: center;
-    place-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    overflow-y: auto;
 }
 
 .wrapper .cards-container .card {
-    border: 2px solid orange;
     width: 220px;
     height: 250px;
     background-color: #777;
+    border-radius: 8px;
+    transition: all .3s;
+}
+
+.wrapper .cards-container .card.hide {
+    display: none;
+    transition: all .4s;
+}
+
+.wrapper .cards-container .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
