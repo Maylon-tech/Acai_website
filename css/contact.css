@@ -1,0 +1,23 @@
+@import "style.css";
+
+.contact {
+    border: 3px solid crimson;
+}
+
+.wrapper {
+    border: 2px solid gray;
+    display: flex;
+    height: 100%;
+}
+
+.wrapper .text-content {
+    border: 2x solid rgb(118, 192, 7);
+    flex: 1;
+    height: 100%;
+}
+
+.form-content {
+    border: 2px solid blue;
+    flex: 1;
+    height: 100%;
+}

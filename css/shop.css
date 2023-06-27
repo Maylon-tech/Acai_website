@@ -1,8 +1,5 @@
 @import 'style.css';
 
-.produtos {
-    border: 3px solid red;
-}
 
 .wrapper {
     border: 2px solid orangered;
@@ -65,8 +62,8 @@
 }
 
 .wrapper .cards-container .card {
-    width: 220px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     background-color: #777;
     border-radius: 8px;
     transition: all .3s;

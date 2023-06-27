@@ -1,6 +1,8 @@
 const containerCards = document.querySelectorAll('.cards-container')
 const card = document.querySelectorAll('.card')
-const buttontabs = document.querySelectorAll('.buttons-tabs .btn-tab')
+const buttontabs = document.querySelectorAll('.buttons-tabs')
+const tabs = document.querySelectorAll('.btn-tab')
+
 
 const filterProducts = (e) => {
     document.querySelector(".active").classList.remove("active")
