@@ -11,13 +11,95 @@
 }
 
 .wrapper .text-content {
-    border: 2x solid rgb(118, 192, 7);
+    border: 2px solid rgb(118, 192, 7);
     flex: 1;
-    height: 100%;
+    height: 80%;
+    padding: 2rem;
 }
 
+.text-content h1 {
+    color: red;
+}
+.text-content .phone-info {
+    border: 2px solid orange;
+}
+
+.text-content .email-info {
+    border: 2px solid orangered;
+}
+
+
+
+
+
+
 .form-content {
-    border: 2px solid blue;
     flex: 1;
+    height: 70%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-content form {
+    width: 100%;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
     height: 100%;
+    background-color: #fff;
+}
+
+form .input-field {
+    padding: 1.2rem;
+}
+
+.input-field input {
+    padding: 1rem;
+    width: 90%;
+    border: none;
+    outline: none;
+    position: relative;
+    border-bottom: 1px solid #999;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #eee;
+    font-size: 1.2rem;
+}
+
+.input-field .input-name {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.input-field textarea {
+    width: 90%;
+    background-color: #eee;
+    height: 250px;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.input-field input,
+.input-field textarea::placeholder {
+    padding: .6rem;
+}
+
+.form-button {
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 200px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    border: none;
 }
