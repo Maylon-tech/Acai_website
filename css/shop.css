@@ -1,6 +1,9 @@
 @import 'style.css';
 
-
+.produtos {
+    padding: 2rem;
+    border: 3px solid orange;
+}
 .wrapper {
     border: 2px solid orangered;
     height: 100%;

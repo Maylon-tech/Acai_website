@@ -29,8 +29,16 @@ main {
 .container {
     max-width: 1380px;
     margin: 0 auto;
-    height: 90vh;
-    
+    height: 90vh;    
+}
+
+.horizonttal-line {
+    width: 90%;
+
+    height: 4px;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin: 0 auto 3em auto;
 }
 
 .header {
