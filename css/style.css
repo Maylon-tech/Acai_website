@@ -34,7 +34,6 @@ main {
 
 .horizonttal-line {
     width: 90%;
-
     height: 4px;
     background-color: lightgray;
     border-radius: 10px;
