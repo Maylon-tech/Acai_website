@@ -48,30 +48,32 @@
 }
 .icons-content h2 {
     color: #fff;
-    font-weight: 400;
+    font-weight: 600;
+    text-decoration: underline;
     letter-spacing: 1px;
 }
 .icons-content .social-media {
     width: 100%;
     height: 90%;
     padding: 1rem;
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(2, 2fr);
-    grid-gap: 1rem;
+    display: flex;
+    flex-direction: column;
 }
-.social-media i {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #fff;
-    border: 1px solid #eee;
-    padding: .5rem;
-    border-radius: 50%;
+.social-media a {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
+    text-decoration: none;
+    margin: .6rem 0;
+}
+.social-media > a > span {
+    color: #fff;
+    font-size: 1.2rem;
+}
+.social-media > a > i {
+    font-size: 1.4rem;
+    color: #fff;
 }
 
 

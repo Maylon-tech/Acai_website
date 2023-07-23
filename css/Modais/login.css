@@ -1,0 +1,10 @@
+.login-modal {
+    border: 2px solid red;
+}
+
+.content-login {
+    max-width: 350px;
+    height: 200px;
+    margin: 0 auto;
+    border: 2px solid green;
+}

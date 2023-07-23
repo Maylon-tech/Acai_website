@@ -1,39 +1,78 @@
 @import "style.css";
 
 .contact {
-    border: 3px solid crimson;
     margin-top: 3rem;
     background: var(--BG-color);
+    
 }
 
 .wrapper {
-    border: 2px solid gray;
     display: flex;
     height: 100%;
 }
 
 .wrapper .text-content {
-    border: 2px solid rgb(118, 192, 7);
     flex: 1;
     height: 80%;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .text-content h1 {
-    color: red;
+    color: #444;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 .text-content .phone-info {
-    border: 2px solid orange;
+    margin: 2rem 0;
+    
 }
+.text-content .phone-info h3 {
+    color: #444;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.text-content .phone-info > span {
+    color: #555;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+    display: block;
+}
+.text-content .phone-info > div,
+.text-content .email-info > div {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.text-content .phone-info > div i,
+.text-content .email-info > div i {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+}
+
 
 .text-content .email-info {
-    border: 2px solid orangered;
+    color: #444;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
-
-
-
-
-
+.text-content .email-info h3 {
+    color: #444;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.text-content .email-info > span {
+    color: #555;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+    display: block;
+}
 
 .form-content {
     flex: 1;
@@ -42,13 +81,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
+    margin-top: 2rem;    
 }
 .form-content form {
     width: 100%;
     padding: .5rem;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     border-radius: 5px;
     height: 100%;
@@ -56,18 +95,18 @@
 }
 
 form .input-field {
-    padding: 1.2rem;
+    padding: .5rem;
 }
 
 .input-field input {
-    padding: 1rem;
-    width: 90%;
+    padding: .7rem;
+    width: 100%;
     border: none;
     outline: none;
     border-radius: 5px;
     position: relative;
     background-color: #eee;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .input-field .input-name {
@@ -77,13 +116,13 @@ form .input-field {
 }
 
 .input-field textarea {
-    width: 90%;
+    width: 100%;
     background-color: #eee;
-    height: 200px;
+    height: 120px;
     resize: none;
     border: none;
     outline: none;
-    padding: 1rem;
+    padding: .7rem;
     font-size: 1.2rem;
     border-radius: 5px;
 }
@@ -94,14 +133,14 @@ form .input-field {
 }
 
 .form-button {
-    padding: 1rem 1.5rem;
+    padding: .7rem;
     border-radius: 8px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: bold;
     width: 200px;
-    margin-top: 1.5rem;
     cursor: pointer;
     border: none;
+    margin: 0px 0px 1rem 1.2rem;
 }

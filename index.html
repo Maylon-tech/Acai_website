@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
 
+    <link rel="stylesheet" href="css/Modais/login.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="">
    <main>
     <div class="container">
 
@@ -54,7 +56,7 @@
                     </div>
                 </div>
             </nav>
-
+            <div id="toggler">light</div>
         </header>
 
         <section class="home-content" id="home">
@@ -85,7 +87,20 @@
 
 
     <section class="login-modal">
-
+        <div class="content-login">
+            <h2>Login</h2>
+            <form action="">
+                <div class="inputWrapper">
+                    <label for="userEmail">Email</label>
+                    <input type="email" name="userEmail" id="email">
+                </div>
+                <div class="inputWrapper">
+                    <label for="userPass">Password</label>
+                    <input type="password" name="userPass" id="pass">
+                </div>
+                <button type="submit">Enter</button>
+            </form>
+        </div>
     </section>
 
     <section class="cart-menu">
@@ -280,11 +295,17 @@
                 <h1>Reach out to us today via any of the given information</h1>
                 <div class="phone-info">
                     <h3>Call Us for instant support</h3>
-                    <span>+9 758378208876</span>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+9 758378208876</span>
+                    </div>
                 </div>
                 <div class="email-info">
                     <h3>Write us bu Email</h3>
-                    <span>user@gmail.com</span>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>user@gmail.com</span>
+                    </div>
                 </div>
             </div>
 
@@ -340,10 +361,22 @@
         <div class="icons-content">
             <h2>Networking</h2>
             <div class="social-media">
-                <i class="fa-brands fa-meta"></i>
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-instagram"></i>
+                <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="http://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>whatsapp</span>
+                </a>
+                <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="http://www.telegram.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-telegram"></i>
+                    <span>Telegram</span>
+                </a>
             </div>
         </div>
     </footer>

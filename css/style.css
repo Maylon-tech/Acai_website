@@ -5,8 +5,12 @@
     --secondary-color: #F6F6F6;
     --BG-sec-color: #402846;
     --BG-2-color: #7C6184;
-
     --secondary-color: #64B240;
+}
+.dark-mode {
+    --bg-color: #414247;
+    --header-color: #fff;
+    --info-color: #ccc; 
 }
 
 
@@ -38,6 +42,36 @@ main {
     background-color: lightgray;
     border-radius: 10px;
     margin: 0 auto 3em auto;
+}
+
+#toggler {
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding: .7rem;
+    border-radius: 50%;
+    color: #642667;
+    background-color: #eee;
+    transition: all.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.loading {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.25rem;
+    width: 100%;
+    z-index: 100;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    background-size: 200%;
+    animation: loading 1s infinite reverse;
 }
 
 .header {
@@ -217,3 +251,14 @@ main {
 
 
 /*   Search Modal  */ 
+
+
+
+@keyframes loading {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
