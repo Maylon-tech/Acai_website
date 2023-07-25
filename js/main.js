@@ -23,3 +23,15 @@ const filterProducts = (e) => {
 }
 
 buttontabs.forEach(button => button.addEventListener("click", filterProducts))
+
+// LOGIN Modal
+
+const loginModal = document.querySelector(".login-modal")
+const userBtn = document.getElementById("userBtn")
+
+function showLogin() {
+    loginModal.classList.toggle('show')
+}
+
+userBtn.addEventListener("click", showLogin)
+

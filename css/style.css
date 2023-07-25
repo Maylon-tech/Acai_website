@@ -13,8 +13,6 @@
     --info-color: #ccc; 
 }
 
-
-
 * {
     padding: 0;
     margin: 0;
@@ -28,6 +26,7 @@ html, body {
 
 main {
     background-color: #fff;
+    position: relative;
 }
 
 .container {
@@ -78,18 +77,18 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    
     max-width: 1920px;
     width: 100%;
     height: 15vh;
     background-color: var(--primary-color); 
     padding: 0 2rem;
-    margin: auto;
+    
     z-index: 100;
 }
 
 .header nav {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     align-items: center;
     max-width: 1160px;
