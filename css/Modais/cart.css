@@ -1,0 +1,14 @@
+.cart-menu {
+    width: 0px;
+    height: 100%;
+    background-color: blueviolet;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .3s ease-in-out;
+}
+
+.cart-menu.showCart {
+    width: 350px;
+}

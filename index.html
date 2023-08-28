@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/footer.css">
 
     <link rel="stylesheet" href="css/Modais/login.css">
+    <link rel="stylesheet" href="css/Modais/cart.css">
+    <link rel="stylesheet" href="css/Modais/search.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -45,13 +47,13 @@
                 </ul>
 
                 <div class="nav-icons">
-                    <div>
+                    <div id="searchBtn">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                     <div id="userBtn">
                         <i class="fa-solid fa-user"></i>
                     </div>
-                    <div>
+                    <div id="cartBtn">
                         <i class="fa-sharp fa-solid fa-cart-shopping"></i>
                     </div>
                 </div>
@@ -78,7 +80,7 @@
                 </div>
          
                 <div class="btn-contents">
-                    <button class="btn-action">Register</button>
+                    <button id="userBtn" class="btn-action">Register</button>
                     <button class="btn-menu">View Menu</button>
                 </div>
             </div>
@@ -104,11 +106,16 @@
     </section>
 
     <section class="cart-menu">
-
+        <h2>Cart Menu</h2>
     </section>
 
     <section class="search-modal">
-        
+        <div class="wrapper-search">
+            <input type="search" placeholder="search for any product">
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
     </section>
 
     <section class="about" id="about">

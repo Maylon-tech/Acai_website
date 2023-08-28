@@ -24,6 +24,8 @@ const filterProducts = (e) => {
 
 buttontabs.forEach(button => button.addEventListener("click", filterProducts))
 
+
+
 // LOGIN Modal
 
 const loginModal = document.querySelector(".login-modal")
@@ -34,4 +36,30 @@ function showLogin() {
 }
 
 userBtn.addEventListener("click", showLogin)
+
+
+
+// Cart Menu
+
+const cartSideMenu = document.getElementById("cartBtn")
+const cartMenu = document.querySelector(".cart-menu")
+function showCart() {
+    cartMenu.classList.toggle('showCart')
+}
+
+cartSideMenu.addEventListener('click', () => {
+    showCart()
+})
+
+
+// Search Modal 
+
+const searchModal = document.querySelector(".search-modal")
+const searchBtn = document.getElementById("searchBtn")
+
+function showSearchModal() {
+    searchModal.classList.toggle("showSearch")
+}
+
+searchBtn.addEventListener('click', showSearchModal)
 
