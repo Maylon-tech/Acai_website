@@ -79,20 +79,19 @@ main {
     left: 0;
     max-width: 1920px;
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     background-color: var(--primary-color); 
     padding: 0 2rem;
-    
     z-index: 100;
 }
 
 .header nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     max-width: 1160px;
     margin: 0 auto;
+    height: 100%;
 }
 
 .header .logo {
@@ -103,12 +102,12 @@ main {
     align-items: center;
     color: #eee;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 800;
 }
 
 .header .logo .title img {
-    width: 80px;
+    width: 50px;
 }
 
 .header .menu {
@@ -146,7 +145,7 @@ main {
     padding: 2rem 1.5rem;
     gap: 1rem;
     background-color: #eeefff;
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 .home-content .content-image {

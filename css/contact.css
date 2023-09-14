@@ -3,21 +3,20 @@
 .contact {
     margin-top: 3rem;
     background: var(--BG-color);
-    
 }
 
 .wrapper {
     display: flex;
-    height: 100%;
 }
 
 .wrapper .text-content {
     flex: 1;
-    height: 80%;
+    margin: auto 0;
+    height: 70%;
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .text-content h1 {
@@ -48,14 +47,11 @@
     gap: 1rem;
     margin-top: 1rem;
 }
-
 .text-content .phone-info > div i,
 .text-content .email-info > div i {
     font-size: 1.4rem;
     color: var(--secondary-color);
 }
-
-
 .text-content .email-info {
     color: #444;
     font-size: 1.3rem;
@@ -76,21 +72,20 @@
 
 .form-content {
     flex: 1;
-    height: 78%;
+    height: 100%;
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 2rem;    
+    justify-content: center;    
 }
 .form-content form {
     width: 100%;
+    height: 80%;
     padding: .5rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     border-radius: 5px;
-    height: 100%;
     background-color: #fff;
 }
 
