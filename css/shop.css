@@ -59,21 +59,52 @@
 }
 
 .wrapper .cards-container .card {
-    width: 150px;
+    width: 250px;
     height: 150px;
-    background-color: #777;
-    border-radius: 8px;
     transition: all .3s;
+    display: flex;
+}
+.image-content {
+    flex: 1;
+}
+.image-content img {
+    width: 100%;
+}
+.product-info {
+    flex: 1;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.product-info .add-cart {
+    background-color: var(--primary-color);
+    color: #fff;
+    width: 60%;
+    padding: .3rem .6rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+.product-info span {
+    font-weight: 600;
+    margin-left: 10px;
+}
+.product-info .title {
+    margin-left: 10px;
+    color: var(--secondary-color);
 }
 
-.wrapper .cards-container .card.hide {
+.card.hide {
     display: none;
     transition: all .4s;
 }
 
-.wrapper .cards-container .card img {
+.card .image-content img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
 }

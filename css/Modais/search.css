@@ -1,6 +1,6 @@
 .search-modal {
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: 5rem;
     right: 280px;
     width: 650px;
     padding: .4em .9rem;
@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     opacity: 0;
-    transition: opacity .4s ease-in-out;
+    transition: opacity .4s;
 }
 
 .search-modal.showSearch {
