@@ -3,6 +3,7 @@
 .contact {
     margin-top: 3rem;
     background: var(--BG-color);
+    border: 3px solid red;
 }
 
 .wrapper {

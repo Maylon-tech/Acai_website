@@ -15,7 +15,6 @@
     width: 350px;
 }
 
-
 .cart-header {
     display: flex;
     justify-content: space-between;
@@ -37,9 +36,3 @@
     margin-top: 1rem;
 }
 
-.produtos {
-    width: 90%;
-    padding: 1rem;
-    background-color: lightcoral;
-    margin: 1rem auto;
-}
