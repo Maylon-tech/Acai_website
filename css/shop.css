@@ -33,38 +33,76 @@
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
     gap: 1rem;
+    justify-content: center;
     margin-top: 1rem;
     position: relative;
-    border: 3px solid green;
 }
 
 .product-content .card {
-    width: 250px;
-    height: 150px;
+    width: 280px;
+    height: 200px;
     transition: all .3s;
     display: flex;
     border-radius: 8px;
     cursor: pointer;
-    border: 2px solid blue;
 }
-.image-content {
+.card .image-content {
     flex: 1;
     border-radius: 8px;
 }
-.image-content img {
+.card .image-content img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 8px;
 }
-.product-info {
+.card .product-info {
     border-radius: 8px;
     flex: 1;
     background-color: gainsboro;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-between;
+    padding: .7rem .4rem;
 }
-.product-info .add-cart {
+
+/* Information */
+.card .product-info .info-content {
+    padding: 1rem .5rem 1.2rem;
+}
+.card .product-info .info-content p {
+    font-size: .9rem;
+    color: #333;
+    margin-top: .5rem;
+}
+/* Buttons  */
+.card .product-info .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+    padding: .5rem 0;
+}
+.card .product-info .buttons .cart-list {
+    padding: .3rem;
+}
+.card .product-info .buttons .wish-list .fa-heart {
+    color: rgb(189, 75, 75);
+    font-size: 1.3rem;
+}
+.card .product-info .buttons .wish-list .fa-heart:hover {
+    color: red;
+}
+.card .product-info .buttons .wish-list:active .fa-heart{
+    box-shadow: 2px 2px 12px crimson;
+}
+.card .product-info .buttons .wish-list {
+    padding: .3rem;
+}
+.card .product-info .buttons .cart-list .cart-icon {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+.card .product-info .add-cart {
     background-color: var(--primary-color);
     color: #fff;
     width: 60%;
@@ -75,11 +113,11 @@
     border-radius: 4px;
     margin: 0 auto;
 }
-.product-info span {
+.card .product-info span {
     font-weight: 600;
     margin-left: 10px;
 }
-.product-info .title {
+.card .product-info .info-content .title {
     margin-left: 10px;
     color: var(--secondary-color);
 }
