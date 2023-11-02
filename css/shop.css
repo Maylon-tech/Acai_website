@@ -20,21 +20,19 @@
     align-items: center;
     gap: 1rem;
     flex-direction: column;
-    border: 3px solid orange;
 }
 .product-content .content-title {
     position: absolute;
-    top: 10px;
+    top: -20px;
     left: 20px;
 }
 .cards-container .product-content {
-    padding: 2.5rem 1rem;
+    padding: 1.5rem 1rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: center;
-    margin-top: 1rem;
     position: relative;
 }
 
@@ -45,21 +43,19 @@
     display: flex;
     border-radius: 8px;
     cursor: pointer;
+    padding: .3rem;
+    background-color: rgba(230, 223, 223, 0.856);
 }
 .card .image-content {
     flex: 1;
-    border-radius: 8px;
 }
 .card .image-content img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
 }
 .card .product-info {
-    border-radius: 8px;
     flex: 1;
-    background-color: gainsboro;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,6 +65,13 @@
 /* Information */
 .card .product-info .info-content {
     padding: 1rem .5rem 1.2rem;
+}
+.card .product-info .info-content span {
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+    width: 50%;
+   
 }
 .card .product-info .info-content p {
     font-size: .9rem;
