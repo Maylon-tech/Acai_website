@@ -23,13 +23,16 @@ buttontabs.forEach(button => button.addEventListener("click", filterProducts))
 
 const loginModal = document.querySelector(".login-modal")
 const userBtn = document.getElementById("userBtn")
-
+const closeXBtn = document.getElementById('closeBtn')
 function showLogin() {
     loginModal.classList.toggle('show')
 }
-
+function closeModal() {
+    loginModal.classList.remove('show')
+}
 userBtn.addEventListener("click", showLogin)
-
+closeXBtn.addEventListener("click", closeModal)
+loginModal.addEventListener("click", closeModal)
 
 
 // Cart Menu

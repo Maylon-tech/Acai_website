@@ -6,6 +6,7 @@
     position: fixed;
     top: 3.8rem;
     right: 0;
+    z-index: 9999;
     transition: all .3s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -32,7 +33,29 @@
 }
 
 .product-container {
-    border: 2px solid orange;
     margin-top: 1rem;
 }
 
+.product-container .product {
+    width: 80%;
+    height: 120px;
+    background-color: lightgray;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    padding: .5rem .8rem;
+    border-radius: 5px;
+}
+.product .image-product {
+    flex: 1;
+}
+.product .image-product img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.product .info-prod {
+    flex: 1;
+    color: #111;
+}

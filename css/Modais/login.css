@@ -1,3 +1,4 @@
+/*  */
 .login-modal {
     position: fixed;
     top: 50%;
@@ -9,23 +10,30 @@
     display: none;
     place-items: center;
     opacity: 0;
-    transition: opacity .3s ease-in-out;
+    transition: opacity .6s ease-in-out;
     border: 3px solid red;
     z-index: -20;
 }
+
+/*  JS - className  manipulation */
 .login-modal.show {
     opacity: 1;
     z-index: 20;
     display: grid;
     
 }
+
+/* TOdo Modal */
+
 .content-login {
-    max-width: 350px;
+    max-width: 480px;
+    width: 100%;
     height: 380px;
     padding: 1.5rem;
     background-color: #eee;
     transition: transform.4s ease-in-out 3s;
     border-radius: 8px;
+    position: relative;
 }
 
 .content-login h2 {
@@ -69,4 +77,63 @@
     width: 140px;
     margin: 1rem;
     font-size: 1.3rem;
+}
+
+.content-login form .right-box-info {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: .8rem;
+    width: 45%;
+}
+
+.content-login form .right-box-info .sign-up-btn button {
+    border: none;
+    color: #333;
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+} 
+.content-login form .right-box-info .sign-up-btn button:hover {
+    color: var(--primary-color);
+}
+.content-login form .right-box-info .forgot-pass {
+    color: #333;
+    font-size: 1rem;
+    display: block;
+    cursor: pointer;
+} 
+.content-login form .right-box-info .forgot-pass:hover {
+    color: var(--primary-color);
+}
+
+.content-login .forgot-pass {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Close X btn */
+
+.content-login .close-x {
+    background-color: crimson;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.content-login .close-x span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #fff;
 }

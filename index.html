@@ -87,11 +87,13 @@
         </section>
     </div>
 
-
     <section class="login-modal">
         <div class="content-login">
+            <button class="close-x" id="closeBtn">
+                <span>X</span>
+            </button>
             <h2>Login</h2>
-            <form action="css/Modais/loginInfo.html">
+            <form action="css/Modais/loginInfo.html" method="POST">
                 <div class="inputWrapper">
                     <label for="userEmail">Email</label>
                     <input type="email" name="userEmail" id="email">
@@ -101,6 +103,14 @@
                     <input type="password" name="userPass" id="pass">
                 </div>
                 <button type="submit">Enter</button>
+                <div class="right-box-info">
+                    <div class="sign-up-btn">
+                        <button>Sign Up Now</button>
+                    </div>
+                    <span class="forgot-pass" id="forgot_password">
+                        Forgot your password?
+                    </span>
+                </div>
             </form>
         </div>
     </section>
@@ -112,16 +122,31 @@
         </div>
 
         <section class="product-container">
-            <div class="produtos" id="produtos">
-                produto 01
+            <div class="product" id="produtos">
+                <div class="image-product">
+                    <img src="assets/tabs Products/juice01.jpg" alt="img-prod">
+                </div>
+                <div class="info-prod">
+                    Information here
+                </div>
             </div>
 
-            <div class="produtos" id="produtos">
-                produto 02
+            <div class="product" id="produtos">
+                <div class="image-product">
+                    <img src="assets/tabs Products/juice01.jpg" alt="img-prod">
+                </div>
+                <div class="info-prod">
+                    Information here
+                </div>
             </div>
 
-            <div class="produtos" id="produtos">
-                produto 03
+            <div class="product" id="produtos">
+                <div class="image-product">
+                    <img src="assets/tabs Products/juice01.jpg" alt="img-prod">
+                </div>
+                <div class="info-prod">
+                    Information here
+                </div>
             </div>
         </section>
     </section>

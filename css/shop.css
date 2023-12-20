@@ -2,10 +2,12 @@
 
 .produtos {
     padding: 2rem;
+    border: 3px solid orangered;
+    height: 300vh;
 }
 
 .produtos .wrapper {
-
+    border: 3px solid orange;
 }
 
 /* .active {
@@ -14,7 +16,6 @@
 
 .wrapper .cards-container {
     width: 100%;
-    height: 320%;
     padding: 1.5rem;
     display: flex;
     align-items: center;
