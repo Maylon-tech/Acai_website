@@ -3,11 +3,12 @@
 .produtos {
     padding: 2rem;
     border: 3px solid orangered;
-    height: 300vh;
+    height: 100vh;
 }
 
 .produtos .wrapper {
     border: 3px solid orange;
+    height: 100%;
 }
 
 /* .active {
@@ -32,9 +33,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
+    height: 100%;
     gap: 1.5rem;
     justify-content: center;
     position: relative;
+    border: 3px solid green;
 }
 
 .product-content .card {
