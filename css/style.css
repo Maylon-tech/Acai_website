@@ -163,7 +163,6 @@ main {
     height: 100%;
     display: flex;
     align-items: center;
-  
     flex-direction: column;
     padding: 3rem;
 }
@@ -172,11 +171,15 @@ main {
     flex: 1;
     padding: 1rem;
 }
-
+.content-info .info .apps-btn {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .content-info .info .apps-btn img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 65%;
+    height: 65%;
 }
 
 .content-info .info h1 span {
@@ -185,7 +188,7 @@ main {
 }
 .content-info .info h1 {
     color: var(--primary-color);
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
 }
@@ -193,11 +196,35 @@ main {
     margin-top: 2rem;
     text-align: center;
     color: #444;
-    font-size: 2rem;
+    font-size: 1.3rem;
+}
+
+.content-info .info .image-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: .5rem;
+}
+
+.content-info .info .image-product .image-content-product {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.content-info .info .image-product .image-content-product:hover {
+    transform: translateY(-13px);
+}
+
+.content-info .info .image-product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
 .content-info .btn-contents {
-    flex: 1;
     width: 100%;
     display: flex;
     gap: 2rem;
@@ -206,13 +233,13 @@ main {
 }
 
 .content-info .btn-contents button {
-    padding: 1.5rem;
-    width: 180px;
-    height: 70px;
-    border-radius: 8px;
+    padding: 1rem;
+    width: 140px;
+    height: 50px;
+    border-radius: 4px;
     border: none;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1rem;
 
 }
 

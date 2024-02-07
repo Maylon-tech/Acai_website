@@ -3,7 +3,6 @@
 .contact {
     margin-top: 3rem;
     background: var(--BG-color);
-    height: 100vh;
 }
 .wrapper {
     display: flex;
