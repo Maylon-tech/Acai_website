@@ -1,12 +1,13 @@
 @import 'style.css';
 
 .produtos {
-    padding: 2rem;
-    border: 3px solid orangered;
+    padding: 1rem;
 }
 
 .produtos .wrapper {
-    border: 3px solid orange;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* .active {
@@ -18,37 +19,22 @@
     padding: 1.5rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 1rem;
-    flex-direction: column;
-}
-.product-content .content-title {
-    position: absolute;
-    top: -20px;
-    left: 20px;
-}
-.cards-container .product-content {
-    padding: 1.5rem 1rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    
-    gap: 1.5rem;
-    justify-content: center;
-    position: relative;
-    border: 3px solid green;
 }
 
-.product-content .card {
+.card {
     width: 280px;
     height: 200px;
     transition: all .3s;
     display: flex;
     border-radius: 8px;
-    cursor: pointer;
     padding: .3rem;
-    background-color: rgba(230, 223, 223, 0.856);
+    background-color: rgba(241, 236, 236, 0.918);
 }
 .card .image-content {
     flex: 1;
+    
 }
 .card .image-content img {
     width: 100%;
